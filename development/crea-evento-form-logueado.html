@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ROOOF</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="canonical" href="http://yourdomain.com/crea-evento-form-logueado.html">
+    <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,600,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/production.min.js"></script>
+
+    <!-- the next three script links are for the slider -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://yaireo.github.io/saSlider/jquery.touch.js"></script>
+    <script src="http://yaireo.github.io/saSlider/saSlider.js"></script>
+
+</head>
+
+
+
+
+    <body>
+
+        <header>
+    <div class="wrap">
+        <div class="logo"><a href="index-logueado.html">ROOOF</a></div>
+        <nav>
+            <ul class="left">
+                <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+                <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+                <li><a href="crea-logueado.html">Crea tu evento</a></li>
+            </ul>
+            <div class="foologin">
+                <a class="sregistro" href="perfil-vacio.html">Mi Perfil</a>
+                <ul class="dropdownito">
+                    <li><a href="perfil-vacio.html">Mi perfil</a></li>
+                    <li><a href="perfil-editar.html">Editar perfil</a></li>
+                    <li><a href="registrate.html">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="nav-hamburger">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+            <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+            <li><a href="crea-logueado.html">Crea tu evento</a></li>
+            <li><a href="perfil-vacio.html">Mi Perfil</a></li>
+            <li><a href="perfil-editar.html">Editar perfil</a></li>
+            <li><a href="registrate.html">Cerrar sesión</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $( ".cross" ).hide();
+        $( ".menu" ).hide();
+        $( ".hamburger" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
+            });
+        });
+
+        $( ".cross" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".cross" ).hide();
+                $( ".hamburger" ).show();
+            });
+        });
+    </script>
+</header>
+
+
+  <section class="crea-form">
+    <div class="atras">
+      <div class="wrap-wider">
+        <p><a href="crea-logueado.html"> < Atrás</a> Creando tu evento</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <dl class="accordion">
+        <dt>
+          <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Título</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <textarea class="direction" type="text" name="text"></textarea>
+              <select>
+                <option value="gastronomia">Gastronomía</option>
+                <option value="musica">Música</option>
+                <option value="arte">Arte</option>
+                <option value="teatro">Teatro</option>
+                <option value="performance">Performance</option>
+                <option value="comida">Comida</option>
+              </select>
+              <button href="#accordion2" class="btn btn_euro js-temporarySaveButton" type="submit">GUARDAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">Barrio / Aforo</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <input class="price-number" type="number" min="0" max="9999999" name="price" required> <h2 class="persona"> personas</h2>
+              <select>
+                <option value="eixampla">Eixample</option>
+                <option value="gracia">Gràcia</option>
+                <option value="sant-marti">Sant Martí</option>
+                <option value="ciutat-vella">Ciutat Vella</option>
+                <option value="les-corts">Les Corts</option>
+                <option value="nou-barris">Nou Barris</option>
+                <option value="sants-montjuic">Sants-Montjuïc</option>
+                <option value="sant-andreu">Sant Andreu</option>
+                <option value="sarria-sant-gervasi">Sarrià-Sant Gervasi</option>
+                <option value="horta-guinardo">Horta-Guinardó</option>
+              </select>
+              <button href="#accordion3" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Fecha / Hora</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <input type="date" name="date"><br>
+              <input type="time" name="time"><br>
+              <button href="#accordion4" class="btn js-temporarySaveButton">GUARDAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">
+            Precio</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+          <div class="tab-content">
+              <form>
+                <input class="price-number" type="number" min="0" max="9999999" name="price"> <h1 class="euro"> €</h1>
+                <button href="#accordion5" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+                <p>*Las entradas se cobrarán en el lugar del evento</p>
+              </form>
+            </div>
+        </dd>
+        <dt>
+          <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">
+            Descripción
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <textarea type="text" placeholder="Escribe un resumen con un máximo de 250 carácteres" name="text" maxlength="250"></textarea>
+              <p class="form-description">Quedan 250 carácteres</p>
+              <div class="space"></div>
+              <button href="#accordion6" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion6" aria-expanded="false" aria-controls="accordion6" class="accordion-title accordionTitle js-accordionTrigger">
+            Fotos
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <h2>¡Añade un par de fotos!</h2>
+              <p>O todas las que quieras. Tu público agradecerá las fotos que muestren claramente que es lo que quieres ofrecerles.</p>
+              <input class="add-photo" type="file" name="photo">
+              <button href="#accordion7" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion7" aria-expanded="false" aria-controls="accordion7" class="accordion-title accordionTitle js-accordionTrigger">
+            Ubicación
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion7" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <h2>Dirección</h2>
+              <p>Tu dirección exacta es privada y sólo la compartiremos<br>con los usuarios que dispongan de una reserva confirmada</p>
+              <textarea class="direction" type="text" name="text"></textarea>
+              <button href="#accordion8" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion8" aria-expanded="false" aria-controls="accordion8" class="accordion-title accordionTitle js-accordionTrigger">
+            Publicar
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion8" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <h2>Ya está casi listo</h2>
+              <p>Ya tenemos todos los datos necesarios<br>para publicar tu anuncio. Pulsa el botón de <span>publicar</span><br>y tu evento aparecerá en la lista de eventos de ROOOF</p>
+              <button href="#accordion9" class="btn btn_euro js-temporarySaveButton">PUBLICAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion9" aria-expanded="false" aria-controls="accordion9" class="accordion-title accordionTitle js-accordionTrigger">
+            Done!
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion9" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <h2>¡ENHORABUENA!</h2>
+              <p>Tu evento ha sido publicado con éxito.
+            Recuerda completar tu perfil para que tus invitados sepan más sobre ti
+                y se animen a compartir esta experiencia contigo.</p>
+                <a href="perfil-personal.html" class="volver-a-perfil-personal">volver a tu perfil</a>
+              <a href="lista-eventos-logueado.html" class="btn btn_euro">CONTINUAR EN ROOOF</a>
+            </form>
+          </div>
+        </dd>
+      </dl>
+
+      <!-- if you want the blank input sale error, use the following JS -->
+
+      <!-- <script>
+        $('.js-temporarySaveButton').click(function(event) {
+          event.preventDefault();
+          var name = $('textarea[name="text"]');
+          var label = name.siblings('label');
+          var nameContent = $.trim(name.val());
+          if(nameContent == "") {
+            label.show();
+            name.addClass('error');
+          } else {
+            name.removeClass('error');
+            label.hide();
+              var parentDD = $(this).parent().parent().parent();
+              parentDD.slideUp();
+              parentDD.prev().children().removeClass('close');
+              parentDD.next().next().slideDown();
+              parentDD.next().children().addClass('close');
+          }
+        });
+
+        $('dt a').click(function(event) {
+          event.preventDefault();
+          $('dd:visible').prev().children().removeClass('close');
+          $('dd:visible').slideUp();
+          $(this).addClass('close');
+          if($(this).parent().next().is(':hidden')) {
+            $(this).parent().next().slideDown();
+          } else {
+            $(this).removeClass('close');
+          }
+        });
+
+        $('textarea[name="text"]').focusout(function() {
+          var name = $('textarea[name="text"]');
+          if(name.val() == "") {
+            name.addClass('error');
+            label.show();
+          } else {
+            name.removeClass('error');
+            label.hide();
+          }
+        });
+      </script> -->
+
+      <script>
+      $('.js-temporarySaveButton').click(function(event) {
+        event.preventDefault();
+        var parentDD = $(this).parent().parent().parent();
+        parentDD.slideUp();
+        parentDD.prev().children().removeClass('close');
+        parentDD.next().next().slideDown();
+        parentDD.next().children().addClass('close');
+      });
+      $('dt a').click(function(event) {
+        event.preventDefault();
+        $('dd:visible').prev().children().removeClass('close');
+        $('dd:visible').slideUp();
+        $(this).addClass('close');
+        if($(this).parent().next().is(':hidden')) {
+          $(this).parent().next().slideDown();
+        } else {
+          $(this).removeClass('close');
+        }
+      });
+      </script>
+
+    </div>
+  </section>
+
+<footer>
+    <div class="wrap">
+        <div class="logo-down">ROOOF</div>
+        <div class="link-down">
+            <a href="mailto:hellorooof@gmail.com">contacta con nosotros</a>
+        </div>
+        <div class="social-network">
+            <a href="https://twitter.com/hellorooof"><img src="../assets/images/social-twitter.png"></a>
+            <a href="http://instagram.com/hellorooof"><img src="../assets/images/social-ins.png"></a>
+        </div>
+    </div>
+</footer>
+
+
+    </body>
+
+</html>

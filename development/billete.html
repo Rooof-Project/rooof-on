@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ROOOF</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="canonical" href="http://yourdomain.com/billete.html">
+    <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,600,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/production.min.js"></script>
+
+    <!-- the next three script links are for the slider -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://yaireo.github.io/saSlider/jquery.touch.js"></script>
+    <script src="http://yaireo.github.io/saSlider/saSlider.js"></script>
+
+</head>
+
+
+
+
+    <body>
+
+        <header>
+    <div class="wrap">
+        <div class="logo"><a href="index-logueado.html">ROOOF</a></div>
+        <nav>
+            <ul class="left">
+                <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+                <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+                <li><a href="crea-logueado.html">Crea tu evento</a></li>
+            </ul>
+            <div class="foologin">
+                <a class="sregistro" href="perfil-vacio.html">Mi Perfil</a>
+                <ul class="dropdownito">
+                    <li><a href="perfil-vacio.html">Mi perfil</a></li>
+                    <li><a href="perfil-editar.html">Editar perfil</a></li>
+                    <li><a href="">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="nav-hamburger">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+            <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+            <li><a href="crea-logueado.html">Crea tu evento</a></li>
+            <li><a href="perfil-vacio.html">Mi Perfil</a></li>
+            <li><a href="perfil-editar.html">Editar perfil</a></li>
+            <li><a href="">Cerrar sesión</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $( ".cross" ).hide();
+        $( ".menu" ).hide();
+        $( ".hamburger" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
+            });
+        });
+
+        $( ".cross" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".cross" ).hide();
+                $( ".hamburger" ).show();
+            });
+        });
+    </script>
+</header>
+
+
+        <section class="ficha-evento section-intro">
+            <div class="wrap">
+                <div class="feature">
+                    <div class="titulo">
+                        <h2 class="h1">YA TIENES TUS ENTRADAS</h2>
+                        <p class="h2-complementary">Tu reserva se ha relizado con éxito</p>
+                    </div>
+                    <img src="../assets/images/billete.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>Detalles del evento</h2>
+                    <p>Nombre del evento: Milky way Express</p>
+                    <p>Fecha y hora: 28 de Febrero 2015 18:00-24:00</p>
+                    <p>Número de entradas: 2 </p>
+                    <h3>Dirección:</h3>
+                    <p><a href="https://www.google.es/maps/place/Carrer+de+Pujades,+229,+08005+Barcelona/@41.4039127,2.2034573,17z/data=!3m1!4b1!4m2!3m1!1s0x12a4a33f6792c8d7:0x7e75ba333010684c?hl=en">Carrer De Pujades, 229, Atico 1º</a></p>
+                    <p>Indicaciones: a 25m del metro Poblenou</p>
+                    <p>Detalles de pago: 6€ en puerta.</p>
+                    <h3>Datos de contacto</h3>
+                    <p>Milky way</p>
+                    <p>Teléfono: +34-639322433</p>
+                </div>
+                <div class="details">
+                    <h2>Más información</h2>
+                    <p>Recuerda que el precio del evento es de 6€ por persona.</p>
+                    <p>El pago se realiza el día del evento en la propia casa del creador.</p>
+                    <a href="lista-eventos-logueado.html" class="btn btn-primary">buscar más eventos</a>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+    <div class="wrap">
+        <div class="logo-down">ROOOF</div>
+        <div class="link-down">
+            <a href="mailto:hellorooof@gmail.com">contacta con nosotros</a>
+        </div>
+        <div class="social-network">
+            <a href="https://twitter.com/hellorooof"><img src="../assets/images/social-twitter.png"></a>
+            <a href="http://instagram.com/hellorooof"><img src="../assets/images/social-ins.png"></a>
+        </div>
+    </div>
+</footer>
+
+    </body>
+</html>

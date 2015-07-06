@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ROOOF</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="canonical" href="http://yourdomain.com/perfil-editar.html">
+    <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,600,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/production.min.js"></script>
+
+    <!-- the next three script links are for the slider -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://yaireo.github.io/saSlider/jquery.touch.js"></script>
+    <script src="http://yaireo.github.io/saSlider/saSlider.js"></script>
+
+</head>
+
+
+
+
+    <body>
+
+        <header>
+    <div class="wrap">
+        <div class="logo"><a href="index-logueado.html">ROOOF</a></div>
+        <nav>
+            <ul class="left">
+                <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+                <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+                <li><a href="crea-logueado.html">Crea tu evento</a></li>
+            </ul>
+            <div class="foologin">
+                <a class="sregistro" href="perfil-vacio.html">Mi Perfil</a>
+                <ul class="dropdownito">
+                    <li><a href="perfil-vacio.html">Mi perfil</a></li>
+                    <li><a href="perfil-editar.html">Editar perfil</a></li>
+                    <li><a href="registrate.html">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="nav-hamburger">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+            <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+            <li><a href="crea-logueado.html">Crea tu evento</a></li>
+            <li><a href="perfil-vacio.html">Mi Perfil</a></li>
+            <li><a href="perfil-editar.html">Editar perfil</a></li>
+            <li><a href="registrate.html">Cerrar sesión</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $( ".cross" ).hide();
+        $( ".menu" ).hide();
+        $( ".hamburger" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
+            });
+        });
+
+        $( ".cross" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".cross" ).hide();
+                $( ".hamburger" ).show();
+            });
+        });
+    </script>
+</header>
+
+
+<section class="perfil-editar section-intro">
+
+       <div class="perfil-user-img">
+          <img alt="imagen del creador" class=""src="../assets/images/hostperfil01.jpg">
+      </div>
+      <div class="titulo">
+        <h1>Milky Way</h1>
+      </div>
+<div class="triangulo text-centre"></div>
+<div class="row">
+  <div class="columns large-16 large-centered">
+
+      <div class="form__wrap">
+          <form>
+            <div class="titulo_form__wrap_first">
+              <h3 class=" h3-complementary">Datos Personales</h3>
+            </div>
+            <div class="field">
+            <label for="textarea">Escribe un poco sobre ti</label>
+            <textarea  placeholder="Cuéntanos quien eres, qué haces y cuales son tus intereses." class="full-width"></textarea>
+          </div>
+      <div class="row">
+        <div class="columns large-11">
+            <div class="field">
+                <label for="">Escoge al menos un área que te guste</label>
+                <!-- <input placeholder="Quiero asistir a eventos de"type="text" class="full-width"> -->
+                <dl class="dropdown full-width">
+                    <dt>
+                        <a href="##">
+                            <span class="hida">Quiero asistir a eventos de...</span>
+                            <p class="multiSel"></p>
+                        </a>
+                    </dt>
+                    <dd>
+                        <div class="mutliSelect">
+                            <ul>
+                                <li><input type="checkbox" value="Música" /> <p class="tag-musica"></p></li>
+                                <li><input type="checkbox" value="Gastronomía" /> <p class="tag-gastronomia"></p></li>
+                                <li><input type="checkbox" value="Teatro" /> <p class="tag-teatro"></p></li>
+                                <li><input type="checkbox" value="Humor" /> <p class="tag-humor"></p></li>
+                                <li><input type="checkbox" value="Arte" /> <p class="tag-arte"></p></li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="columns large-11">
+          <div class="field">
+            <label for="">Añade tu sitio web personal </label>
+            <input type="text" class="full-width" placeholder="http: //www.rooof.com">
+         </div>
+        </div>
+      </div>
+         <div class="titulo_form__wrap">
+            <h3 class=" h3-complementary">Datos de contacto</h3>
+         </div>
+
+         <div class="field">
+           <label for="">Correo electrónico</label>
+           <input type="email" class="full-width" placeholder="hello@rooof.com">
+           <p class="hint">Sólo será visible una vez hecha la reserva</p>
+         </div>
+
+         <div class="row">
+        <div class="columns large-11">
+            <div class="field">
+              <label for="">Twitter</label>
+              <span class="prefilled">Twitter.com/</span>
+              <input id="twitter"placeholder=""type="text" class="full-width">
+            </div>
+          </div>
+        <div class="columns large-11">
+          <div class="field">
+            <label for="">Facebook</label>
+            <span class="prefilled">Facebook.com/</span>
+            <input id="facebook"placeholder="" type="text" class="full-width">
+         </div>
+        </div>
+      </div>
+    </form>
+      <div class="button__wrap">
+        <a href="perfil-medio-vacio.html" class="btn btn-primary"> Guardar</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+    /*
+    Dropdown with Multiple checkbox select with jQuery - May 27, 2013
+    (c) 2013 @ElmahdiMahmoud
+    license: http://www.opensource.org/licenses/mit-license.php
+*/
+
+$(".dropdown dt a").on('click', function () {
+          $(".dropdown dd ul").slideToggle('fast');
+      });
+
+      $(".dropdown dd ul li a").on('click', function () {
+          $(".dropdown dd ul").hide();
+      });
+
+      function getSelectedValue(id) {
+           return $("##" + id).find("dt a span.value").html();
+      }
+
+      $(document).bind('click', function (e) {
+          var $clicked = $(e.target);
+          if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+      });
+
+
+      $('.mutliSelect input[type="checkbox"]').on('click', function () {
+
+          var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
+              title = $(this).val() + ",";
+
+          if ($(this).is(':checked')) {
+              var html = '<span title="' + title + '">' + title + '</span>';
+              $('.multiSel').append(html);
+              $(".hida").hide();
+          }
+          else {
+              $('span[title="' + title + '"]').remove();
+              var ret = $(".hida");
+              $('.dropdown dt a').append(ret);
+
+          }
+      });
+</script>
+
+</section>
+
+<footer>
+    <div class="wrap">
+        <div class="logo-down">ROOOF</div>
+        <div class="link-down">
+            <a href="mailto:hellorooof@gmail.com">contacta con nosotros</a>
+        </div>
+        <div class="social-network">
+            <a href="https://twitter.com/hellorooof"><img src="../assets/images/social-twitter.png"></a>
+            <a href="http://instagram.com/hellorooof"><img src="../assets/images/social-ins.png"></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
